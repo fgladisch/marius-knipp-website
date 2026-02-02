@@ -1,4 +1,3 @@
-import './StarDecoration.css';
 import star1 from '../../assets/icons/stars/star-01.svg';
 import star2 from '../../assets/icons/stars/star-02.svg';
 import star3 from '../../assets/icons/stars/star-03.svg';
@@ -24,11 +23,17 @@ export const StarDecoration = ({
   color = 'light',
   className = '',
 }: StarDecorationProps) => {
+  const colorClasses = {
+    light: '',
+    dark: 'brightness-0',
+    accent: 'brightness-0 saturate-100 invert-[29%] sepia-[98%] saturate-[2472%] hue-rotate-[243deg] brightness-[97%] contrast-[107%]',
+  };
+
   return (
     <img
       src={stars[variant]}
       alt=""
-      className={`star-decoration star-decoration--${color} ${className}`.trim()}
+      className={`block flex-shrink-0 ${colorClasses[color]} ${className}`.trim()}
       style={{ width: size, height: 'auto' }}
       aria-hidden="true"
     />

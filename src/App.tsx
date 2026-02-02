@@ -1,7 +1,4 @@
-import './styles/fonts.css';
-import './styles/variables.css';
 import './styles/global.css';
-import './App.css';
 
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
@@ -13,7 +10,7 @@ import { Contact } from './components/sections/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div className="min-h-screen">
       <a href="#main-content" className="skip-link">
         Zum Hauptinhalt springen
       </a>

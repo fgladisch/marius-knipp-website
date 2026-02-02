@@ -1,19 +1,18 @@
-import './About.css';
 import profileImg from '../../assets/images/profile.png';
 import { SectionTitle } from '../ui/SectionTitle';
 
 export const About = () => {
   return (
-    <section id="about" className="about">
-      <div className="about__container container">
+    <section id="about" className="py-30 bg-primary text-light">
+      <div className="container">
         <SectionTitle label="About" />
 
-        <div className="about__content">
-          <div className="about__image">
-            <img src={profileImg} alt="Marius Knipp" loading="lazy" />
+        <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] xl:grid-cols-[408px_1fr] gap-20 items-start">
+          <div className="w-full max-w-[300px] md:max-w-none md:w-[300px] xl:w-[408px] aspect-square overflow-hidden">
+            <img src={profileImg} alt="Marius Knipp" loading="lazy" className="w-full h-full object-cover" />
           </div>
 
-          <p className="about__text">
+          <p className="max-w-text text-body leading-[1.65]">
             Hi! Mein name ist Marius Knipp, ich bin selbstständiger
             Produkt- und Industriedesigner, gelernter Schreiner und
             gestalte Raum-, Messebau und Retailstore Konzepte. In enger

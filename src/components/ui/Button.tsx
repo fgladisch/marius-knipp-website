@@ -1,4 +1,3 @@
-import './Button.css';
 import arrowIcon from '../../assets/icons/arrow.svg';
 
 interface ButtonProps {
@@ -18,20 +17,30 @@ export const Button = ({
   className = '',
   showIcon = true,
 }: ButtonProps) => {
-  const buttonClass = `button button--${variant} ${className}`.trim();
+  const baseClasses = 'inline-flex items-center gap-4 py-2.5 px-[30px] border-[1.5px] rounded-button bg-transparent font-body text-body uppercase cursor-pointer transition-all duration-normal';
+
+  const variantClasses = variant === 'secondary'
+    ? 'border-light text-light hover:bg-light hover:text-primary'
+    : 'border-current text-inherit hover:bg-primary hover:text-light';
+
+  const buttonClasses = `${baseClasses} ${variantClasses} ${className}`.trim();
+
+  const arrowClasses = variant === 'secondary'
+    ? 'w-6 h-auto transition-transform duration-normal group-hover:translate-x-1 group-hover:brightness-0'
+    : 'w-6 h-auto transition-transform duration-normal group-hover:translate-x-1 group-hover:brightness-0 group-hover:invert';
 
   if (href) {
     return (
-      <a href={href} className={buttonClass}>
-        {showIcon && <img src={arrowIcon} alt="" className="button__arrow" />}
+      <a href={href} className={`group ${buttonClasses}`}>
+        {showIcon && <img src={arrowIcon} alt="" className={arrowClasses} />}
         <span>{text}</span>
       </a>
     );
   }
 
   return (
-    <button onClick={onClick} className={buttonClass}>
-      {showIcon && <img src={arrowIcon} alt="" className="button__arrow" />}
+    <button onClick={onClick} className={`group ${buttonClasses}`}>
+      {showIcon && <img src={arrowIcon} alt="" className={arrowClasses} />}
       <span>{text}</span>
     </button>
   );

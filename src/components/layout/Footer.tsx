@@ -1,4 +1,3 @@
-import './Footer.css';
 import logo from '../../assets/images/logo.svg';
 
 const LinkedInIcon = () => (
@@ -19,26 +18,26 @@ const LinkedInIcon = () => (
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__container container">
-        <div className="footer__logo">
-          <img src={logo} alt="M.K." />
+    <footer className="bg-primary text-light py-20 pb-12">
+      <div className="container flex flex-col md:flex-row items-start md:items-end justify-between gap-12">
+        <div className="w-[150px] md:w-[228px]">
+          <img src={logo} alt="M.K." className="w-full h-auto invert" />
         </div>
 
         <a
           href="https://linkedin.com/in/mariusknipp"
           target="_blank"
           rel="noopener noreferrer"
-          className="footer__social"
+          className="w-14 h-14 transition-opacity duration-fast hover:opacity-80"
           aria-label="LinkedIn Profile"
         >
           <LinkedInIcon />
         </a>
 
-        <div className="footer__legal">
-          <a href="/datenschutz">Datenschutz</a>
+        <div className="flex gap-6 text-body">
+          <a href="/datenschutz" className="hover:underline">Datenschutz</a>
           <span>|</span>
-          <a href="/impressum">Impressum</a>
+          <a href="/impressum" className="hover:underline">Impressum</a>
         </div>
       </div>
     </footer>

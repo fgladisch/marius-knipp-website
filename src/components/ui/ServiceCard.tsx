@@ -1,4 +1,3 @@
-import './ServiceCard.css';
 import { StarDecoration } from './StarDecoration';
 
 interface ServiceCardProps {
@@ -15,12 +14,12 @@ export const ServiceCard = ({
   starVariant,
 }: ServiceCardProps) => {
   return (
-    <div className="service-card">
+    <div className="flex flex-col md:flex-row gap-12">
       <StarDecoration variant={starVariant} size={74} color="accent" />
-      <div className="service-card__content">
-        <h3 className="service-card__title">{title}</h3>
-        <p className="service-card__description">{description}</p>
-        {footnote && <p className="service-card__footnote">{footnote}</p>}
+      <div className="flex-1">
+        <h3 className="font-body text-card-title font-normal mb-6">{title}</h3>
+        <p className="text-body leading-[1.65] mb-6">{description}</p>
+        {footnote && <p className="text-footnote opacity-70">{footnote}</p>}
       </div>
     </div>
   );
