@@ -2,11 +2,13 @@
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
-  padding: 12px 24px;
-  border: 2px solid currentColor;
+  padding: 10px 30px;
+  border: 1.5px solid currentColor;
+  border-radius: 46px;
   background: transparent;
   font-family: var(--font-body);
-  font-size: var(--text-small);
+  font-size: var(--text-body);
+  text-transform: uppercase;
   color: inherit;
   cursor: pointer;
   transition: background var(--transition-normal), color var(--transition-normal);
@@ -14,7 +16,7 @@
 
 .button:hover {
   background: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-text-light);
 }
 
 .button__arrow {
@@ -30,12 +32,12 @@
 
 /* Secondary variant for light backgrounds */
 .button--secondary {
-  border-color: var(--color-white);
-  color: var(--color-white);
+  border-color: var(--color-text-light);
+  color: var(--color-text-light);
 }
 
 .button--secondary:hover {
-  background: var(--color-white);
+  background: var(--color-text-light);
   color: var(--color-primary);
 }
 

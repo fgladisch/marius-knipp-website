@@ -7,6 +7,7 @@ interface ButtonProps {
   href?: string;
   variant?: 'primary' | 'secondary';
   className?: string;
+  showIcon?: boolean;
 }
 
 export const Button = ({
@@ -15,13 +16,14 @@ export const Button = ({
   href,
   variant = 'primary',
   className = '',
+  showIcon = true,
 }: ButtonProps) => {
   const buttonClass = `button button--${variant} ${className}`.trim();
 
   if (href) {
     return (
       <a href={href} className={buttonClass}>
-        <img src={arrowIcon} alt="" className="button__arrow" />
+        {showIcon && <img src={arrowIcon} alt="" className="button__arrow" />}
         <span>{text}</span>
       </a>
     );
@@ -29,7 +31,7 @@ export const Button = ({
 
   return (
     <button onClick={onClick} className={buttonClass}>
-      <img src={arrowIcon} alt="" className="button__arrow" />
+      {showIcon && <img src={arrowIcon} alt="" className="button__arrow" />}
       <span>{text}</span>
     </button>
   );

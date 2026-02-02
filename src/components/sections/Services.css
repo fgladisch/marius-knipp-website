@@ -1,6 +1,7 @@
 .services {
   padding: var(--spacing-2xl) 0;
-  background: var(--color-background);
+  background: var(--color-primary);
+  color: var(--color-text-light);
 }
 
 .services__grid {

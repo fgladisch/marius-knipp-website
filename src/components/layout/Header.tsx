@@ -22,9 +22,10 @@ export const Header = ({ variant = 'light' }: HeaderProps) => {
         </nav>
 
         <Button
-          text="Contact me"
-          href="#contact"
+          text="EMail"
+          href="mailto:kontakt@mariusk.de"
           variant={variant === 'light' ? 'secondary' : 'primary'}
+          showIcon={false}
         />
       </div>
     </header>

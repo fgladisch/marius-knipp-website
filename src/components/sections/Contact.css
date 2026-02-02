@@ -1,7 +1,7 @@
 .contact {
   padding: var(--spacing-2xl) 0;
   background: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-text-light);
   position: relative;
 }
 

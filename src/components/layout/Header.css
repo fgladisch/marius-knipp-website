@@ -29,6 +29,8 @@
 
 .header__nav a {
   font-size: var(--text-body);
+  font-weight: bold;
+  text-transform: uppercase;
   position: relative;
 }
 
@@ -49,7 +51,7 @@
 
 /* Hero section has dark background, so header text should be light */
 .header--light {
-  color: var(--color-white);
+  color: var(--color-text-light);
 }
 
 .header--light .header__logo img {
