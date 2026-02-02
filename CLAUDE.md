@@ -1,5 +1,11 @@
 # Marius Knipp Website
 
+## Workflow
+
+Always check `PROGRESS.md` first before starting any implementation work. This file tracks which steps are completed and what remains to be done.
+
+After completing each task, verify the implementation using Playwright by navigating to the local dev server (http://localhost:3000) and checking that the changes render correctly in the browser.
+
 ## Overview
 
 A portfolio website for Marius Knipp, a product and industrial designer specializing in spatial design, trade fair construction, retail design, and branding. The design is a single-page layout with distinct sections.

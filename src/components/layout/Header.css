@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: var(--spacing-md) 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 78px;
+}
+
+.header__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.header__nav a {
+  font-size: var(--text-body);
+  position: relative;
+}
+
+.header__nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width var(--transition-normal);
+}
+
+.header__nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero section has dark background, so header text should be light */
+.header--light {
+  color: var(--color-white);
+}
+
+.header--light .header__logo img {
+  filter: invert(1);
+}

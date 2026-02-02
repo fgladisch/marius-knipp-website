@@ -1,0 +1,11 @@
+.projects {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+}

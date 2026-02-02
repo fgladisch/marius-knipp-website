@@ -1,0 +1,26 @@
+.service-card {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.service-card__content {
+  flex: 1;
+}
+
+.service-card__title {
+  font-family: var(--font-body);
+  font-size: var(--text-card-title);
+  font-weight: 400;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-card__description {
+  font-size: var(--text-body);
+  line-height: 1.65;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-card__footnote {
+  font-size: var(--text-footnote);
+  opacity: 0.7;
+}

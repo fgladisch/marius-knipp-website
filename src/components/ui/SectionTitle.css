@@ -1,0 +1,30 @@
+.section-title {
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+}
+
+.section-title__label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--text-body);
+}
+
+.section-title__arrow {
+  width: 33px;
+  height: auto;
+}
+
+.section-title__heading {
+  font-size: var(--text-section-title);
+  margin-top: var(--spacing-md);
+}
+
+.section-title__line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 5px;
+  background: currentColor;
+}

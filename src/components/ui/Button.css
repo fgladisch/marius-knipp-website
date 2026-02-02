@@ -1,0 +1,44 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 12px 24px;
+  border: 2px solid currentColor;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: inherit;
+  cursor: pointer;
+  transition: background var(--transition-normal), color var(--transition-normal);
+}
+
+.button:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button__arrow {
+  width: 24px;
+  height: auto;
+  transition: transform var(--transition-normal);
+}
+
+.button:hover .button__arrow {
+  transform: translateX(4px);
+  filter: brightness(0) invert(1);
+}
+
+/* Secondary variant for light backgrounds */
+.button--secondary {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.button--secondary:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.button--secondary:hover .button__arrow {
+  filter: brightness(0);
+}

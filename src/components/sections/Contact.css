@@ -1,0 +1,38 @@
+.contact {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+  position: relative;
+}
+
+.contact__container {
+  position: relative;
+}
+
+.contact__decoration {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact__arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 167px;
+  height: auto;
+}
+
+.contact__headline {
+  font-size: var(--text-hero);
+  font-weight: 200;
+  line-height: 0.9;
+  margin-bottom: var(--spacing-xl);
+}
+
+.contact__text {
+  max-width: 810px;
+  font-size: var(--text-body);
+  margin-bottom: var(--spacing-lg);
+}

@@ -1,0 +1,124 @@
+/* ===========================================
+   Responsive Design
+   =========================================== */
+
+/* Tablet (768px - 1199px) */
+@media (max-width: 1199px) {
+  :root {
+    --text-hero: 120px;
+    --text-section-title: 60px;
+    --content-padding: 48px;
+  }
+
+  /* Hero */
+  .hero__services {
+    position: static;
+    transform: none;
+    text-align: left;
+    margin-top: var(--spacing-xl);
+  }
+
+  /* About */
+  .about__content {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .about__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Services */
+  .services__grid {
+    gap: var(--spacing-lg);
+  }
+
+  /* Contact */
+  .contact__arrow {
+    width: 100px;
+  }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 767px) {
+  :root {
+    --text-hero: 64px;
+    --text-section-title: 40px;
+    --text-body: 18px;
+    --content-padding: 24px;
+  }
+
+  /* Header */
+  .header .header__nav {
+    display: none !important;
+  }
+
+  .header .button {
+    display: none !important;
+  }
+
+  /* Hero */
+  .hero__stars {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .hero__stars img {
+    width: 50px;
+  }
+
+  /* About */
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+
+  .about__image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  /* Services */
+  .services .services__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .services .service-card {
+    flex-direction: column;
+  }
+
+  /* Projects */
+  .projects .projects__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact */
+  .contact__decoration {
+    position: static;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .contact__arrow {
+    display: none;
+  }
+
+  /* Footer */
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+  }
+
+  .footer__logo {
+    width: 150px;
+  }
+}
+
+/* Small Mobile (< 480px) */
+@media (max-width: 479px) {
+  :root {
+    --text-hero: 48px;
+    --text-section-title: 32px;
+  }
+}

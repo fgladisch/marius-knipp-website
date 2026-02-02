@@ -1,0 +1,10 @@
+.services {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-background);
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+}
