@@ -16,3 +16,35 @@ Format: `<gitmoji> <type>: <description>`
 | ✅      | Tests       |
 | 📝      | Docs        |
 | 🔥      | Remove code |
+
+## MCP Servers
+
+The following MCP servers are available:
+
+### figma-desktop
+
+Use for working with Figma designs. Key tools:
+
+- `get_design_context` - Generate UI code from Figma designs (preferred)
+- `get_screenshot` - Capture screenshots of Figma nodes
+- `get_metadata` - Get structure overview in XML format
+- `get_variable_defs` - Get design token/variable definitions
+- `create_design_system_rules` - Generate design system rules
+
+### context7
+
+Use for retrieving up-to-date library documentation and code examples:
+
+- `resolve-library-id` - Find Context7 library ID (call first)
+- `query-docs` - Query documentation for a specific library
+
+### playwright
+
+Use for browser automation and testing:
+
+- `browser_navigate` - Navigate to URLs
+- `browser_snapshot` - Capture accessibility snapshot (preferred over screenshots)
+- `browser_click`, `browser_type`, `browser_fill_form` - Interact with elements
+- `browser_take_screenshot` - Capture visual screenshots
+- `browser_console_messages` - Get console output
+- `browser_network_requests` - Monitor network activity
