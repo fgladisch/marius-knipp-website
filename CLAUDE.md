@@ -10,6 +10,10 @@ After completing each task, verify the implementation using Playwright by naviga
 
 A portfolio website for Marius Knipp, a product and industrial designer specializing in spatial design, trade fair construction, retail design, and branding. The design is a single-page layout with distinct sections.
 
+## Design Source
+
+The design is accessible in Figma in the frame "Final Draft" in the project "Marius Website".
+
 ## Git Commits
 
 Format: `<gitmoji> <type>: <description>`

@@ -16,7 +16,7 @@ export const ServiceCard = ({
 }: ServiceCardProps) => {
   return (
     <div className="service-card">
-      <StarDecoration variant={starVariant} size={74} color="dark" />
+      <StarDecoration variant={starVariant} size={74} color="accent" />
       <div className="service-card__content">
         <h3 className="service-card__title">{title}</h3>
         <p className="service-card__description">{description}</p>

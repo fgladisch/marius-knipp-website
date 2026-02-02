@@ -6,13 +6,15 @@
 .section-title__label {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: 18px;
   font-size: var(--text-body);
+  text-transform: uppercase;
 }
 
 .section-title__arrow {
   width: 33px;
-  height: auto;
+  height: 26px;
+  transform: rotate(-90deg);
 }
 
 .section-title__heading {
