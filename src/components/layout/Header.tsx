@@ -1,32 +1,58 @@
-import logo from '../../assets/images/logo.svg';
-import { Button } from '../ui/Button';
+import logo from "../../assets/images/logo.svg";
+import { Button } from "../ui/Button";
 
 interface HeaderProps {
-  variant?: 'light' | 'dark';
+  variant?: "light" | "dark";
 }
 
-export const Header = ({ variant = 'light' }: HeaderProps) => {
-  const isLight = variant === 'light';
+export const Header = ({ variant = "light" }: HeaderProps) => {
+  const isLight = variant === "light";
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-[100] py-6 ${isLight ? 'text-light' : ''}`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-[100] py-6 ${isLight ? "text-light" : ""}`}
+    >
       <div className="container flex items-center justify-between">
         <a href="#home" className="w-[78px]">
-          <img src={logo} alt="M.K. - Marius Knipp" className={`w-full h-auto ${isLight ? 'invert' : ''}`} />
+          <img
+            src={logo}
+            alt="M.K. - Marius Knipp"
+            className={`w-full h-auto ${isLight ? "invert" : ""}`}
+          />
         </a>
 
         <nav className="hidden md:flex gap-20">
-          <a href="#home" className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full">Home</a>
-          <a href="#about" className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full">About</a>
-          <a href="#work" className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full">Work</a>
-          <a href="#contact" className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full">Contact</a>
+          <a
+            href="#home"
+            className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full"
+          >
+            About
+          </a>
+          <a
+            href="#work"
+            className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full"
+          >
+            Work
+          </a>
+          <a
+            href="#contact"
+            className="text-body font-bold uppercase relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-normal hover:after:w-full"
+          >
+            Contact
+          </a>
         </nav>
 
         <div className="hidden md:block">
           <Button
-            text="EMail"
+            text="E-Mail"
             href="mailto:kontakt@mariusk.de"
-            variant={isLight ? 'secondary' : 'primary'}
+            variant={isLight ? "secondary" : "primary"}
             showIcon={false}
           />
         </div>

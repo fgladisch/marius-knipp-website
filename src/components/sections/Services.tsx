@@ -1,12 +1,14 @@
-import { SectionTitle } from '../ui/SectionTitle';
-import { ServiceCard } from '../ui/ServiceCard';
-import { services } from '../../data/services';
+import { services } from "../../data/services";
+import { SectionHeader } from "../ui/SectionHeader";
+import { SectionTitle } from "../ui/SectionTitle";
+import { ServiceCard } from "../ui/ServiceCard";
 
 export const Services = () => {
   return (
     <section id="services" className="py-30 bg-primary text-light">
       <div className="container">
-        <SectionTitle label="WORK" title="Services" />
+        <SectionHeader label="WORK" />
+        <SectionTitle className="mb-20 text-right">Services</SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20">
           {services.map((service) => (
