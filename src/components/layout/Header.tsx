@@ -65,7 +65,7 @@ export const Header = ({ variant = "light" }: HeaderProps) => {
         <div className="hidden md:block">
           <Button
             text="E-Mail"
-            href="mailto:kontakt@mariusk.de"
+            href="mailto:info@mariusknipp.de"
             variant={isLight ? "secondary" : "primary"}
             showIcon={false}
           />

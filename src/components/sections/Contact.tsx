@@ -1,12 +1,16 @@
 import { Button } from "../ui/Button";
 import { SectionHeader } from "../ui/SectionHeader";
-import { StarDecoration } from "../ui/StarDecoration";
+import { StarDecorationGradient } from "../ui/StarDecorationGradient";
 
 export const Contact = () => {
   return (
     <section id="contact" className="py-30 bg-primary text-light relative">
-      <div className="hidden xl:block absolute top-[-54px] right-1/2">
-        <StarDecoration variant={3} size={100} />
+      <div className="hidden md:block absolute top-[-50px] right-1/2">
+        <StarDecorationGradient
+          size={100}
+          topColor="#1E1E1E"
+          bottomColor="#F5F5F5"
+        />
       </div>
 
       <div className="container relative text-right">

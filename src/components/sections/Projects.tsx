@@ -20,7 +20,7 @@ export const Projects = () => {
         <img
           src={arrowIcon}
           alt=""
-          className="hidden xl:block absolute right-[60px] bottom-9 w-[100px] xl:w-[167px] h-auto"
+          className="hidden md:block absolute right-[60px] bottom-9 w-[100px] xl:w-[167px] h-auto"
         />
       </div>
     </section>
