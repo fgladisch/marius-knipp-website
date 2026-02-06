@@ -5,7 +5,7 @@ import { StarDecoration } from "../ui/StarDecoration";
 export const Contact = () => {
   return (
     <section id="contact" className="py-30 bg-primary text-light relative">
-      <div className="hidden xl:block absolute top-[-50px] right-1/2">
+      <div className="hidden xl:block absolute top-[-54px] right-1/2">
         <StarDecoration variant={3} size={100} />
       </div>
 

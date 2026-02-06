@@ -9,7 +9,7 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <h2
-      className={`uppercase text-section-title-xs xs:text-section-title-mobile xl:text-section-title-tablet 2xl:text-section-title mt-6 ${className}`.trim()}
+      className={`uppercase font-extralight text-hero xs:text-hero-mobile xl:text-hero-tablet 2xl:text-hero mt-6 ${className}`.trim()}
     >
       {children}
     </h2>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import { Button } from "../ui/Button";
 
@@ -7,10 +8,23 @@ interface HeaderProps {
 
 export const Header = ({ variant = "light" }: HeaderProps) => {
   const isLight = variant === "light";
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroHeight = document.getElementById("home")?.offsetHeight ?? 982;
+      setIsScrolled(window.scrollY > heroHeight - 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[100] py-6 ${isLight ? "text-light" : ""}`}
+      className={`fixed top-0 left-0 right-0 z-[100] py-6 transition-colors duration-300 ${isLight ? "text-light" : ""} ${isScrolled ? "bg-primary/90 backdrop-blur-sm" : ""}`}
     >
       <div className="container flex items-center justify-between">
         <a href="#home" className="w-[78px]">
