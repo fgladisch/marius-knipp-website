@@ -12,7 +12,7 @@ export const Hero = () => {
       </div>
 
       <div className="container relative">
-        <h1 className="text-hero xs:text-hero-mobile xl:text-hero-tablet 2xl:text-hero font-extralight uppercase">
+        <h1 className="text-hero-mobile md:text-hero-tablet lg:text-hero font-extralight uppercase">
           Creating.
           <br />
           Spaces.
@@ -27,7 +27,7 @@ export const Hero = () => {
         </ul>
       </div>
 
-      <div className="absolute right-20 bottom-0 flex flex-wrap gap-6 md:gap-12 mt-20">
+      <div className="hidden absolute right-20 bottom-0 md:flex flex-wrap gap-6 md:gap-12 mt-20">
         <StarDecoration variant={1} />
         <StarDecoration variant={2} />
         <StarDecoration variant={3} />

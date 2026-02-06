@@ -9,7 +9,7 @@ export const Projects = () => {
     <section id="work" className="py-30 bg-background text-primary">
       <div className="container relative">
         <SectionHeader label="WORK" />
-        <SectionTitle className="mb-12 pl-[100px]">Projects</SectionTitle>
+        <SectionTitle className="mb-12 md:pl-[100px]">Projects</SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {projects.map((project) => (

@@ -25,11 +25,13 @@ export const ProjectCard = ({
           <div className="w-full h-full bg-gray-400" />
         )}
       </div>
-      <div className="flex justify-between text-body mb-2">
+      <div className="flex text-xs justify-between mb-2 gap-8">
         <span>{description}</span>
         {budget && <span>{budget}</span>}
       </div>
-      <h3 className="font-body text-card-title font-normal">{title}</h3>
+      <h3 className="uppercase font-body text-card-title font-normal">
+        {title}
+      </h3>
     </div>
   );
 };
