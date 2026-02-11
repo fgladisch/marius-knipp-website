@@ -21,12 +21,12 @@ export const About = () => {
             dem Handwerk stelle ich sicher, dass ihr Projekt in die schnelle
             Umsetzung übergeht und begleite den Prozess.
           </p>
-          <div className="w-full max-w-[300px] md:max-w-none md:w-[300px] xl:w-[408px] aspect-square overflow-hidden">
+          <div className="group w-full max-w-[300px] md:max-w-none md:w-[300px] xl:w-[408px] aspect-square hover:scale-105 transition-transform duration-700 ease-out">
             <img
               src={profileImg}
               alt="Marius Knipp"
               loading="lazy"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-700 ease-out"
+              className="w-full h-full grayscale group-hover:grayscale-0 transition-[filter] duration-700 ease-out"
             />
           </div>
         </div>
