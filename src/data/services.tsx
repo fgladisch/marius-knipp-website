@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 export interface Service {
   id: string;
   title: string;
-  description: string;
+  description: ReactNode;
   footnote?: string;
   starVariant: 1 | 2 | 3 | 4;
 }
@@ -10,8 +12,22 @@ export const services: Service[] = [
   {
     id: "messebau",
     title: "Messe- und Ladenbau",
-    description:
-      "Entwicklung, Planung und Visualisierung von Messeständen und Retailstoredesign. Die enge Zusammenarbeit mit dem Partner FORUM ermöglicht eine schnelle Kostenabschätzung und Übergabe nach der Entwurfsphase (wenn gewünscht).",
+    description: (
+      <>
+        Entwicklung, Planung und Visualisierung von Messeständen und
+        Retailstoredesign. Die enge Zusammenarbeit mit dem Partner{" "}
+        <a
+          href="https://forummessebau-schreinerei.de"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          FORUM
+        </a>{" "}
+        ermöglicht eine schnelle Kostenabschätzung und Übergabe nach der
+        Entwurfsphase (wenn gewünscht).
+      </>
+    ),
     starVariant: 4,
   },
   {

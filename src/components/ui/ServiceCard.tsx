@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import { StarDecoration } from "./StarDecoration";
 
 interface ServiceCardProps {
   title: string;
-  description: string;
+  description: ReactNode;
   footnote?: string;
   starVariant: 1 | 2 | 3 | 4;
 }
@@ -14,7 +15,7 @@ export const ServiceCard = ({
   starVariant,
 }: ServiceCardProps) => {
   return (
-    <div className="flex flex-col md:flex-row gap-12">
+    <div className="flex flex-col md:flex-row gap-12 hover:scale-105 transition-all duration-700">
       <div className="flex flex-col items-start md:items-center">
         <StarDecoration variant={starVariant} size={74} />
       </div>
