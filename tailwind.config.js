@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#000000',
+        primary: '#0c0c0c',
         background: '#f5f5f5',
         accent: '#7b46ff',
         light: '#f5f5f5',
@@ -18,8 +18,8 @@ module.exports = {
       },
       fontSize: {
         'hero': ['190px', { lineHeight: '170px' }],
-        'hero-tablet': ['120px', { lineHeight: '110px' }],
-        'hero-mobile': ['64px', { lineHeight: '60px' }],
+        'hero-tablet': ['170px', { lineHeight: '110px' }],
+        'hero-mobile': ['72px', { lineHeight: '60px' }],
         'hero-xs': ['48px', { lineHeight: '46px' }],
         'section-title': ['80px', { lineHeight: '1' }],
         'section-title-tablet': ['60px', { lineHeight: '1' }],
@@ -31,6 +31,8 @@ module.exports = {
         'small': ['16px', { lineHeight: '1.5' }],
         'footnote': ['12px', { lineHeight: '1.5' }],
         'services-list': ['32px', { lineHeight: '1.2' }],
+        'services-list-tablet': ['24px', { lineHeight: '1.2' }],
+        'services-list-mobile': ['20px', { lineHeight: '1.2' }],
       },
       spacing: {
         '4.5': '18px',
@@ -54,6 +56,15 @@ module.exports = {
       },
       aspectRatio: {
         'project': '661 / 455',
+      },
+      keyframes: {
+        'slow-zoom': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.08)' },
+        },
+      },
+      animation: {
+        'slow-zoom': 'slow-zoom 20s ease-in-out infinite',
       },
     },
     screens: {

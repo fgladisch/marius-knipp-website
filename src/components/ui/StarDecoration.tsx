@@ -19,7 +19,7 @@ interface StarDecorationProps {
 
 export const StarDecoration = ({
   variant,
-  size = 74,
+  size,
   color = 'light',
   className = '',
 }: StarDecorationProps) => {
@@ -33,8 +33,8 @@ export const StarDecoration = ({
     <img
       src={stars[variant]}
       alt=""
-      className={`block flex-shrink-0 ${colorClasses[color]} ${className}`.trim()}
-      style={{ width: size, height: 'auto' }}
+      className={`block flex-shrink-0 h-auto ${colorClasses[color]} ${className}`.trim()}
+      style={size != null ? { width: size } : undefined}
       aria-hidden="true"
     />
   );

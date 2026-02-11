@@ -9,7 +9,8 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <h2
-      className={`uppercase font-extralight text-hero-mobile xl:text-hero-tablet 2xl:text-hero mt-6 ${className}`.trim()}
+      className={`uppercase font-extralight text-hero-mobile xl:text-hero-tablet mt-6 ${className}`.trim()}
+      style={{ lineHeight: 0.9 }}
     >
       {children}
     </h2>

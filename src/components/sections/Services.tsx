@@ -5,10 +5,10 @@ import { ServiceCard } from "../ui/ServiceCard";
 
 export const Services = () => {
   return (
-    <section id="services" className="py-30 bg-primary text-light">
+    <section id="work" className="py-30 bg-primary text-light">
       <div className="container">
         <SectionHeader label="WORK" />
-        <SectionTitle className="mb-20 md:text-right">Services</SectionTitle>
+        <SectionTitle className="mb-40 md:text-right">Services</SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20">
           {services.map((service) => (

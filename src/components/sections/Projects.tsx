@@ -6,10 +6,10 @@ import { SectionTitle } from "../ui/SectionTitle";
 
 export const Projects = () => {
   return (
-    <section id="work" className="py-30 bg-background text-primary">
+    <section className="py-30 bg-background text-primary">
       <div className="container relative">
-        <SectionHeader label="WORK" />
-        <SectionTitle className="mb-12 md:pl-[100px]">Projects</SectionTitle>
+        <SectionHeader variant="primary" />
+        <SectionTitle className="mb-40 md:pl-[100px]">Projects</SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {projects.map((project) => (

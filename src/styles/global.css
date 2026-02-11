@@ -30,6 +30,11 @@
     font-display: swap;
   }
 
+  /* CSS Variables */
+  :root {
+    --button-color: #7B46FF;
+  }
+
   /* Base Styles */
   html {
     scroll-behavior: smooth;

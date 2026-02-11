@@ -1,13 +1,14 @@
 import { Button } from "../ui/Button";
 import { SectionHeader } from "../ui/SectionHeader";
+import { SectionTitle } from "../ui/SectionTitle";
 import { StarDecorationGradient } from "../ui/StarDecorationGradient";
 
 export const Contact = () => {
   return (
     <section id="contact" className="py-30 bg-primary text-light relative">
-      <div className="hidden md:block absolute top-[-50px] right-1/2">
+      <div className="hidden md:block absolute top-[-75px] right-1/2">
         <StarDecorationGradient
-          size={100}
+          size={150}
           topColor="#1E1E1E"
           bottomColor="#F5F5F5"
         />
@@ -16,13 +17,11 @@ export const Contact = () => {
       <div className="container relative text-right">
         <SectionHeader label="Contact" />
 
-        <h2 className="uppercase text-hero-xs xs:text-hero-mobile xl:text-hero-tablet 2xl:text-hero font-extralight leading-[0.9] mb-10">
-          Sounds
-          <br />
-          interesting?
-        </h2>
+        <SectionTitle className="mb-10 md:pl-[100px]">
+          Sounds interesting?
+        </SectionTitle>
 
-        <p className="text-body mb-12">
+        <p className="mb-12" style={{ fontSize: 25 }}>
           Fragen zu mir? Fragen zu deinem oder Ihrem Projekt?
           <br />
           Kontaktieren Sie mich gerne. Ich freue mich!

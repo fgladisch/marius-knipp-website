@@ -2,7 +2,7 @@ import logo from "../../assets/images/logo.svg";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-light py-20 pb-12">
+    <footer className="bg-primary text-light py-20 pb-15">
       <div className="container flex flex-col md:flex-row items-start md:items-end justify-between gap-12">
         <div className="w-[150px] md:w-[228px]">
           <img src={logo} alt="M.K." className="w-full h-auto invert" />

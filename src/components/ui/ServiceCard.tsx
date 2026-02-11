@@ -22,8 +22,8 @@ export const ServiceCard = ({
         <h3 className="uppercase font-body text-card-title font-normal mb-6">
           {title}
         </h3>
-        <p className="text-sm leading-[1.65] mb-6">{description}</p>
-        {footnote && <p className="text-footnote opacity-70">{footnote}</p>}
+        <p className="text-body leading-[1.65] mb-6">{description}</p>
+        {footnote && <p className="text-sm opacity-70">{footnote}</p>}
       </div>
     </div>
   );
