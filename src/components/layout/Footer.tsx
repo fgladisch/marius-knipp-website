@@ -1,9 +1,12 @@
+import { useFadeIn } from "../../hooks/useFadeIn";
 import logo from "../../assets/images/logo.svg";
 
 export const Footer = () => {
+  const { ref, isVisible } = useFadeIn<HTMLDivElement>();
+
   return (
     <footer className="bg-primary text-light py-20 pb-15">
-      <div className="container flex flex-col md:flex-row items-start md:items-end justify-between gap-12">
+      <div ref={ref} className={`container flex flex-col md:flex-row items-start md:items-end justify-between gap-12 fade-in-up ${isVisible ? "visible" : ""}`}>
         <div className="w-[150px] md:w-[228px]">
           <img src={logo} alt="M.K." className="w-full h-auto invert" />
         </div>

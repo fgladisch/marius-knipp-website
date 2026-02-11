@@ -1,12 +1,15 @@
+import { useFadeIn } from "../../hooks/useFadeIn";
 import { services } from "../../data/services";
 import { SectionHeader } from "../ui/SectionHeader";
 import { SectionTitle } from "../ui/SectionTitle";
 import { ServiceCard } from "../ui/ServiceCard";
 
 export const Services = () => {
+  const { ref, isVisible } = useFadeIn<HTMLDivElement>();
+
   return (
     <section id="work" className="py-30 bg-primary text-light">
-      <div className="container">
+      <div ref={ref} className={`container fade-in-up ${isVisible ? "visible" : ""}`}>
         <SectionHeader label="WORK" />
         <SectionTitle className="mb-40 md:text-right">Services</SectionTitle>
 

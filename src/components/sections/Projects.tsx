@@ -1,3 +1,4 @@
+import { useFadeIn } from "../../hooks/useFadeIn";
 import arrowIcon from "../../assets/icons/arrow.svg";
 import { projects } from "../../data/projects";
 import { ProjectCard } from "../ui/ProjectCard";
@@ -5,9 +6,11 @@ import { SectionHeader } from "../ui/SectionHeader";
 import { SectionTitle } from "../ui/SectionTitle";
 
 export const Projects = () => {
+  const { ref, isVisible } = useFadeIn<HTMLDivElement>();
+
   return (
     <section className="py-30 bg-background text-primary">
-      <div className="container relative">
+      <div ref={ref} className={`container relative fade-in-up ${isVisible ? "visible" : ""}`}>
         <SectionHeader variant="primary" />
         <SectionTitle className="mb-40 md:pl-[100px]">Projects</SectionTitle>
 

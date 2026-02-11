@@ -90,6 +90,18 @@
     @apply top-4;
   }
 
+  /* Fade-in-up animation */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   /* Visually Hidden */
   .visually-hidden {
     @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;

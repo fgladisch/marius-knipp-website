@@ -1,10 +1,16 @@
 import profileImg from "../../assets/images/profile.png";
+import { useFadeIn } from "../../hooks/useFadeIn";
 import { SectionHeader } from "../ui/SectionHeader";
 
 export const About = () => {
+  const { ref, isVisible } = useFadeIn<HTMLDivElement>();
+
   return (
     <section id="about" className="py-30 bg-primary text-light">
-      <div className="container">
+      <div
+        ref={ref}
+        className={`container fade-in-up ${isVisible ? "visible" : ""}`}
+      >
         <SectionHeader label="About" />
 
         <div className="md:px-30">
@@ -20,7 +26,7 @@ export const About = () => {
               src={profileImg}
               alt="Marius Knipp"
               loading="lazy"
-              className="w-full h-full object-cover grayscale"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-700 ease-out"
             />
           </div>
         </div>

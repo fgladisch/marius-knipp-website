@@ -1,9 +1,12 @@
+import { useFadeIn } from "../../hooks/useFadeIn";
 import { Button } from "../ui/Button";
 import { SectionHeader } from "../ui/SectionHeader";
 import { SectionTitle } from "../ui/SectionTitle";
 import { StarDecorationGradient } from "../ui/StarDecorationGradient";
 
 export const Contact = () => {
+  const { ref, isVisible } = useFadeIn<HTMLDivElement>();
+
   return (
     <section id="contact" className="py-30 bg-primary text-light relative">
       <div className="hidden md:block absolute top-[-75px] right-1/2">
@@ -14,7 +17,7 @@ export const Contact = () => {
         />
       </div>
 
-      <div className="container relative text-right">
+      <div ref={ref} className={`container relative text-right fade-in-up ${isVisible ? "visible" : ""}`}>
         <SectionHeader label="Contact" />
 
         <SectionTitle className="mb-10 md:pl-[100px]">
