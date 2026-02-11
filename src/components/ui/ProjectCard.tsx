@@ -19,15 +19,15 @@ export const ProjectCard = ({
             src={image}
             alt={title}
             loading="lazy"
-            className="w-full h-full object-cover transition-transform duration-normal group-hover:scale-105"
+            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
           />
         ) : (
           <div className="w-full h-full bg-gray-400" />
         )}
       </div>
-      <div className="flex text-xs justify-between mb-2 gap-8">
+      <div className="flex text-body justify-between mb-2 gap-8">
         <span>{description}</span>
-        {budget && <span>{budget}</span>}
+        {budget && <span className="text-right whitespace-nowrap">{budget}</span>}
       </div>
       <h3 className="uppercase font-body text-card-title font-normal">
         {title}
