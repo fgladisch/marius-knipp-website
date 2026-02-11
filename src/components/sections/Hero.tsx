@@ -15,7 +15,7 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="container relative pt-10">
+      <div className="container relative">
         <h1
           className="text-hero-mobile md:text-hero-tablet lg:text-hero font-extralight uppercase"
           style={{ lineHeight: "0.9" }}
@@ -25,7 +25,7 @@ export const Hero = () => {
           Spaces.
         </h1>
 
-        <ul className="xl:absolute xl:right-[60px] xl:top-[-30px] list-none xl:text-right text-services-list-mobile md:text-services-list-tablet lg:text-services-list uppercase mt-20 xl:mt-0">
+        <ul className="xl:absolute xl:right-[60px] xl:top-[-70px] list-none xl:text-right text-services-list-mobile md:text-services-list-tablet lg:text-services-list uppercase mt-20 xl:mt-0">
           <li className="mb-2">Raumgestaltung</li>
           <li className="mb-2">Messebau</li>
           <li className="mb-2">Retaildesign</li>
