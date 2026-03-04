@@ -21,6 +21,7 @@ export const Impressum = () => {
 
           <div>
             <h2 className="text-h4 md:text-h3 mb-4">Kontakt</h2>
+            <p>Telefon: +49 170 4491665</p>
             <p>E-Mail: info@mariusknipp.de</p>
           </div>
 
