@@ -35,6 +35,8 @@ export const services: Service[] = [
     title: "Renderings",
     description:
       "Hochwertige Konzeptvisualisierungen. Übersetzung von Entwürfen und Ideen in CAD sowie die Erstellung hochaufgelöster (Produkt-)Visualisierungen für Präsentationszwecke.",
+    footnote:
+      "*standardmäßig werden Entwürfe in 3D visualisiert. Auf Wunsch können diese hochwertig gerendert werden.",
     starVariant: 3,
   },
   {
@@ -51,6 +53,8 @@ export const services: Service[] = [
     title: "Brand / Corporate Design",
     description:
       "Brand- und Logoentwicklung. Mit mehrjähriger Agenturerfahrung begleite ich Sie workshopbasiert bei der Entwicklung einer klaren Markenidentität – von der strategischen Ausrichtung bis zur Formulierung von Unternehmenszielen.",
+    footnote:
+      "*Je nach Auftragsgröße greife ich auf ein Netzwerk an Grafik- und Interaktionsdesigner:innen zurück bzw. kann vermitteln.",
     starVariant: 1,
   },
 ];
