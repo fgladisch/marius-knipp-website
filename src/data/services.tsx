@@ -14,8 +14,11 @@ export const services: Service[] = [
     title: "Messe- und Ladenbau",
     description: (
       <>
-        Entwicklung, Planung und Visualisierung von Messeständen und
-        Retailstore-Designs. Die enge Zusammenarbeit mit dem Partner{" "}
+        <p>
+          Entwicklung, Planung und Visualisierung von Messeständen und
+          Retailstore-Designs.
+        </p>{" "}
+        Die enge Zusammenarbeit mit dem Partner{" "}
         <a
           href="https://forummessebau-schreinerei.de"
           target="_blank"
@@ -33,8 +36,15 @@ export const services: Service[] = [
   {
     id: "renderings",
     title: "Renderings",
-    description:
-      "Hochwertige Konzeptvisualisierungen. Übersetzung von Entwürfen und Ideen in CAD sowie die Erstellung hochaufgelöster (Produkt-)Visualisierungen für Präsentationszwecke.",
+    description: (
+      <>
+        <p>Hochwertige Konzeptvisualisierungen.*</p>
+        <p>
+          Übersetzung von Entwürfen und Ideen in CAD sowie die Erstellung
+          hochaufgelöster (Produkt-)Visualisierungen für Präsentationszwecke.
+        </p>
+      </>
+    ),
     footnote:
       "*standardmäßig werden Entwürfe in 3D visualisiert. Auf Wunsch können diese hochwertig gerendert werden.",
     starVariant: 3,
@@ -42,8 +52,15 @@ export const services: Service[] = [
   {
     id: "grafik",
     title: "Grafik",
-    description:
-      "Erstellung von Werbemitteln und Grafiken. Optional können grafische Elemente mitgestaltet und Produktionsdaten erstellt werden (z.B. Banner, Plots, Drucke, Flyer, etc.).",
+    description: (
+      <>
+        <p>Erstellung von Werbemitteln und Grafiken.*</p>
+        <p>
+          Optional können grafische Elemente mitgestaltet und Produktionsdaten
+          erstellt werden (z.B. Banner, Plots, Drucke, Flyer, etc.).
+        </p>
+      </>
+    ),
     footnote:
       "*bei der Konzeptentwicklung von Messeständen und Retaildesign werden Grafikarbeiten mitgedacht und innerhalb der Visualisierungen anskizziert",
     starVariant: 2,
@@ -51,8 +68,16 @@ export const services: Service[] = [
   {
     id: "brand",
     title: "Brand / Corporate Design",
-    description:
-      "Brand- und Logoentwicklung. Mit mehrjähriger Agenturerfahrung begleite ich Sie workshopbasiert bei der Entwicklung einer klaren Markenidentität – von der strategischen Ausrichtung bis zur Formulierung von Unternehmenszielen.",
+    description: (
+      <>
+        <p>Brand- und Logoentwicklung.*</p>
+        <p>
+          Mit mehrjähriger Agenturerfahrung begleite ich Sie workshopbasiert bei
+          der Entwicklung einer klaren Markenidentität – von der strategischen
+          Ausrichtung bis zur Formulierung von Unternehmenszielen.
+        </p>
+      </>
+    ),
     footnote:
       "*Je nach Auftragsgröße greife ich auf ein Netzwerk an Grafik- und Interaktionsdesigner:innen zurück bzw. kann vermitteln.",
     starVariant: 1,
