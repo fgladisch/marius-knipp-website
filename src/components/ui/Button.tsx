@@ -17,7 +17,7 @@ export const Button = ({
   className = "",
 }: ButtonProps) => {
   const baseClasses =
-    "inline-flex items-center gap-4 py-2 px-[30px] border-[1.5px] rounded-button bg-transparent font-body text-body cursor-pointer transition-all duration-normal";
+    "inline-flex items-center gap-4 py-2 px-[24px] border-[1.5px] rounded-button bg-transparent font-body text-body cursor-pointer transition-all duration-normal";
 
   const variantClasses =
     variant === "secondary"
@@ -30,7 +30,11 @@ export const Button = ({
     return (
       <a href={href} className={`group ${buttonClasses}`}>
         <span className="hidden xl:block">{text}</span>
-        <img className="block xl:hidden" src={emailIcon} alt="Email icon" />
+        <img
+          className="block xl:hidden h-[16px]"
+          src={emailIcon}
+          alt="Email icon"
+        />
       </a>
     );
   }
