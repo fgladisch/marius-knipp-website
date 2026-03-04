@@ -23,11 +23,15 @@ export const ProjectCard = ({
           className="w-full h-full object-cover md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-105 transition-all duration-700 ease-out"
         />
       </div>
-      <div className="flex text-body justify-between mb-2 gap-8">
-        <span>{description}</span>
-        {budget && <span className="text-right whitespace-nowrap">{budget}</span>}
+      <div className="flex justify-between mb-2 gap-8">
+        <span className="text-base md:text-body">{description}</span>
+        {budget && (
+          <span className="text-base md:text-body text-right whitespace-nowrap">
+            {budget}
+          </span>
+        )}
       </div>
-      <h3 className="uppercase font-body text-card-title font-normal">
+      <h3 className="uppercase font-body text-base md:text-card-title font-normal">
         {title}
       </h3>
     </div>

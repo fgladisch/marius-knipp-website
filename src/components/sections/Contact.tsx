@@ -23,7 +23,7 @@ export const Contact = () => {
       >
         <SectionHeader label="Contact" />
 
-        <SectionTitle className="mb-10 md:pl-[100px] text-[24px] md:text-hero-mobile xl:text-hero-tablet">
+        <SectionTitle className="mb-10 md:pl-[100px]">
           Sounds interesting?
         </SectionTitle>
 
