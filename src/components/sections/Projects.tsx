@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import arrowIcon from "../../assets/icons/arrow.svg";
-import { projects } from "../../data/projects";
 import type { Project } from "../../data/projects";
+import { projects } from "../../data/projects";
 import { useFadeIn } from "../../hooks/useFadeIn";
 import { ProjectCard } from "../ui/ProjectCard";
 import { ProjectModal } from "../ui/ProjectModal";
@@ -19,8 +19,10 @@ export const Projects = () => {
       const el = sectionRef.current;
       if (!el) return;
       const rect = el.getBoundingClientRect();
-      const progress = 1 - rect.bottom / (window.innerHeight + rect.height);
-      setOffset(progress * 120);
+      const scrollRange = rect.height + window.innerHeight;
+      const progress = 1 - rect.bottom / scrollRange;
+      const clamped = Math.max(0, Math.min(1, progress));
+      setOffset(620 - clamped * 640);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
