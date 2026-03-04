@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/hero-bg.png";
+import heroBg from "../../assets/images/hero-bg.jpg";
 import { StarDecoration } from "../ui/StarDecoration";
 
 export const Hero = () => {
