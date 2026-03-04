@@ -3,7 +3,7 @@ import { Footer } from "../components/layout/Footer";
 
 export const Datenschutz = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <LegalHeader />
       <main className="container pt-40 pb-20">
         <h1 className="text-h2 md:text-h1 mb-12">Datenschutzerkl&auml;rung</h1>
