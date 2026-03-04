@@ -1,9 +1,9 @@
 // Preview images (first image of each project)
 import apelPreview from "../assets/images/projects/apel/apel-01.jpg";
-import auxiliumPreview from "../assets/images/projects/auxilium/auxilium-01.png";
-import camperPreview from "../assets/images/projects/camper/camper-01.png";
+import auxiliumPreview from "../assets/images/projects/auxilium/auxilium-01.jpg";
+import camperPreview from "../assets/images/projects/camper/camper-01.jpg";
 import stabifixPreview from "../assets/images/projects/stabifix/stabifix-01.jpg";
-import vagabundoPreview from "../assets/images/projects/vagabundo/vagabundo-interior-01.png";
+import vagabundoPreview from "../assets/images/projects/vagabundo/vagabundo-interior-01.jpg";
 
 // Stabifix gallery
 import stabifix02 from "../assets/images/projects/stabifix/stabifix-02.jpg";
@@ -13,21 +13,21 @@ import stabifix05 from "../assets/images/projects/stabifix/stabifix-05.jpg";
 import stabifix06 from "../assets/images/projects/stabifix/stabifix-06.jpg";
 
 // Vagabundo gallery
-import vagabundoBath01 from "../assets/images/projects/vagabundo/vagabundo-bathroom-01.png";
-import vagabundoBath02 from "../assets/images/projects/vagabundo/vagabundo-bathroom-02.png";
-import vagabundoDetail from "../assets/images/projects/vagabundo/vagabundo-interior-detail-01.png";
-import vagabundoKitchen from "../assets/images/projects/vagabundo/vagabundo-kitchen.png";
+import vagabundoBath01 from "../assets/images/projects/vagabundo/vagabundo-bathroom-01.jpg";
+import vagabundoBath02 from "../assets/images/projects/vagabundo/vagabundo-bathroom-02.jpg";
+import vagabundoDetail from "../assets/images/projects/vagabundo/vagabundo-interior-detail-01.jpg";
+import vagabundoKitchen from "../assets/images/projects/vagabundo/vagabundo-kitchen.jpg";
 
 // Camper gallery
-import camper02 from "../assets/images/projects/camper/camper-02.png";
-import camper03 from "../assets/images/projects/camper/camper-03.png";
-import camper04 from "../assets/images/projects/camper/camper-04.png";
-import camper05 from "../assets/images/projects/camper/camper-05.png";
-import camper06 from "../assets/images/projects/camper/camper-06.png";
-import camper07 from "../assets/images/projects/camper/camper-07.png";
-import camper08 from "../assets/images/projects/camper/camper-08.png";
-import camper09 from "../assets/images/projects/camper/camper-09.png";
-import camperExterior from "../assets/images/projects/camper/camper-exterior.png";
+import camper02 from "../assets/images/projects/camper/camper-02.jpg";
+import camper03 from "../assets/images/projects/camper/camper-03.jpg";
+import camper04 from "../assets/images/projects/camper/camper-04.jpg";
+import camper05 from "../assets/images/projects/camper/camper-05.jpg";
+import camper06 from "../assets/images/projects/camper/camper-06.jpg";
+import camper07 from "../assets/images/projects/camper/camper-07.jpg";
+import camper08 from "../assets/images/projects/camper/camper-08.jpg";
+import camper09 from "../assets/images/projects/camper/camper-09.jpg";
+import camperExterior from "../assets/images/projects/camper/camper-exterior.jpg";
 
 // Apel gallery
 import apel02 from "../assets/images/projects/apel/apel-02.jpg";
