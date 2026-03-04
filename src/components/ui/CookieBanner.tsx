@@ -22,7 +22,7 @@ export const CookieBanner = () => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-primary text-light px-6 py-4">
-      <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="container flex flex-col sm:flex-row items-center justify-between gap-8">
         <p className="text-body text-center sm:text-left">
           Diese Website verwendet ausschließlich technische Cookies um das
           bestmögliche Erlebnis für Sie sicherzustellen.{" "}
