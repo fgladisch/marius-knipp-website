@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import arrowIcon from "../../assets/icons/arrow.svg";
 import { projects } from "../../data/projects";
+import type { Project } from "../../data/projects";
 import { useFadeIn } from "../../hooks/useFadeIn";
 import { ProjectCard } from "../ui/ProjectCard";
+import { ProjectModal } from "../ui/ProjectModal";
 import { SectionHeader } from "../ui/SectionHeader";
 import { SectionTitle } from "../ui/SectionTitle";
 
@@ -10,6 +12,7 @@ export const Projects = () => {
   const { ref, isVisible } = useFadeIn<HTMLDivElement>();
   const sectionRef = useRef<HTMLElement>(null);
   const [offset, setOffset] = useState(0);
+  const [activeProject, setActiveProject] = useState<Project | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +38,11 @@ export const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {projects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
+            <ProjectCard
+              key={project.id}
+              {...project}
+              onClick={() => setActiveProject(project)}
+            />
           ))}
         </div>
 
@@ -46,6 +53,13 @@ export const Projects = () => {
           style={{ transform: `translateY(${offset}px)` }}
         />
       </div>
+
+      {activeProject && (
+        <ProjectModal
+          project={activeProject}
+          onClose={() => setActiveProject(null)}
+        />
+      )}
     </section>
   );
 };

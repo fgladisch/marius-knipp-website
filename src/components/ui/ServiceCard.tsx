@@ -15,7 +15,7 @@ export const ServiceCard = ({
   starVariant,
 }: ServiceCardProps) => {
   return (
-    <div className="flex flex-col md:flex-row gap-12 hover:scale-105 transition-all duration-700">
+    <div className="flex flex-col md:flex-row gap-12 md:hover:scale-105 transition-all duration-700">
       <div className="flex flex-col items-start md:items-center">
         <StarDecoration variant={starVariant} size={74} />
       </div>

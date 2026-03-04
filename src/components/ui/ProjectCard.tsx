@@ -2,7 +2,8 @@ interface ProjectCardProps {
   title: string;
   description: string;
   budget?: string;
-  image?: string;
+  image: string;
+  onClick?: () => void;
 }
 
 export const ProjectCard = ({
@@ -10,20 +11,17 @@ export const ProjectCard = ({
   description,
   budget,
   image,
+  onClick,
 }: ProjectCardProps) => {
   return (
-    <div className="group">
+    <div className="group cursor-pointer" onClick={onClick}>
       <div className="aspect-project bg-background mb-6 overflow-hidden">
-        {image ? (
-          <img
-            src={image}
-            alt={title}
-            loading="lazy"
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
-          />
-        ) : (
-          <div className="w-full h-full bg-gray-400" />
-        )}
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          className="w-full h-full object-cover md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-105 transition-all duration-700 ease-out"
+        />
       </div>
       <div className="flex text-body justify-between mb-2 gap-8">
         <span>{description}</span>
