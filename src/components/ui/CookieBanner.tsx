@@ -26,7 +26,7 @@ export const CookieBanner = () => {
         <p className="text-body text-center sm:text-left">
           Diese Website verwendet ausschließlich technische Cookies um das
           bestmögliche Erlebnis für Sie sicherzustellen.{" "}
-          <Link to="/datenschutz" className="underline hover:opacity-80">
+          <Link to="/datenschutz" className="underline hover:opacity-80 whitespace-nowrap">
             Mehr erfahren
           </Link>
         </p>
