@@ -10,6 +10,7 @@ import { Projects } from './components/sections/Projects';
 import { Contact } from './components/sections/Contact';
 import { Impressum } from './pages/Impressum';
 import { Datenschutz } from './pages/Datenschutz';
+import { CookieBanner } from './components/ui/CookieBanner';
 
 function HomePage() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
       </Routes>
+      <CookieBanner />
     </BrowserRouter>
   );
 }
