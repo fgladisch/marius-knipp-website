@@ -17,14 +17,14 @@ export const Contact = () => {
         />
       </div>
 
-      <div ref={ref} className={`container relative text-right fade-in-up ${isVisible ? "visible" : ""}`}>
+      <div ref={ref} className={`container relative text-left md:text-right fade-in-up ${isVisible ? "visible" : ""}`}>
         <SectionHeader label="Contact" />
 
-        <SectionTitle className="mb-10 md:pl-[100px]">
+        <SectionTitle className="mb-10 md:pl-[100px] text-[40px] md:text-hero-mobile xl:text-hero-tablet">
           Sounds interesting?
         </SectionTitle>
 
-        <p className="mb-12" style={{ fontSize: 25 }}>
+        <p className="mb-12 text-base md:text-[25px]">
           Fragen zu mir? Fragen zu deinem oder Ihrem Projekt?
           <br />
           Kontaktieren Sie mich gerne. Ich freue mich!
