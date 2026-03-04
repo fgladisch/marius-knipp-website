@@ -15,7 +15,7 @@ export const services: Service[] = [
     description: (
       <>
         Entwicklung, Planung und Visualisierung von Messeständen und
-        Retailstoredesign. Die enge Zusammenarbeit mit dem Partner{" "}
+        Retailstore-Designs. Die enge Zusammenarbeit mit dem Partner{" "}
         <a
           href="https://forummessebau-schreinerei.de"
           target="_blank"
@@ -25,7 +25,7 @@ export const services: Service[] = [
           FORUM
         </a>{" "}
         ermöglicht eine schnelle Kostenabschätzung und Übergabe nach der
-        Entwurfsphase (wenn gewünscht).
+        Entwurfsphase – wenn gewünscht.
       </>
     ),
     starVariant: 4,
@@ -34,9 +34,7 @@ export const services: Service[] = [
     id: "renderings",
     title: "Renderings",
     description:
-      "Hochwertige Konzeptvisualisierungen. Übersetzung von Entwürfen und Ideen in CAD und Produktion hoch aufgelöster (Produkt-) Visualisierungen für Präsentationszwecke (z.B. für Einsatz Website, Kundenpräsentationen, etc.)",
-    footnote:
-      "*standardmäßig werden Entwürfe in 3D visualisiert. Auf Wunsch können diese hochwertig gerendert werden.",
+      "Hochwertige Konzeptvisualisierungen. Übersetzung von Entwürfen und Ideen in CAD sowie die Erstellung hochaufgelöster (Produkt-)Visualisierungen für Präsentationszwecke.",
     starVariant: 3,
   },
   {
@@ -52,9 +50,7 @@ export const services: Service[] = [
     id: "brand",
     title: "Brand / Corporate Design",
     description:
-      "Brand- und Logoentwicklung. Mit mehrjähriger Agenturerfahrung begleite ich Sie workshopbasiert bei der Entwicklung einer klaren Markenidentität, unterstütze bei der strategischen Ausrichtung und der Formulierung von Unternehmenszielen. Auf Wunsch erstelle ich UX-Konzepte für Websites und betreue die Umsetzung von UI und Code – inklusive Logoentwicklung.",
-    footnote:
-      "*Je nach Auftragsgröße greife ich auf ein Netzwerk an Grafik- und Interaktionsdesigner:innen zurück bzw. kann vermitteln.",
+      "Brand- und Logoentwicklung. Mit mehrjähriger Agenturerfahrung begleite ich Sie workshopbasiert bei der Entwicklung einer klaren Markenidentität – von der strategischen Ausrichtung bis zur Formulierung von Unternehmenszielen.",
     starVariant: 1,
   },
 ];
