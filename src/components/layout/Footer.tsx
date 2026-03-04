@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useFadeIn } from "../../hooks/useFadeIn";
 import logo from "../../assets/images/logo.svg";
 
@@ -12,13 +13,13 @@ export const Footer = () => {
         </div>
 
         <div className="flex gap-6 text-body">
-          <a href="/datenschutz" className="hover:underline">
+          <Link to="/datenschutz" className="hover:underline">
             Datenschutz
-          </a>
+          </Link>
           <span>|</span>
-          <a href="/impressum" className="hover:underline">
+          <Link to="/impressum" className="hover:underline">
             Impressum
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
