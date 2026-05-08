@@ -1,1 +1,0 @@
-Use Figma to read the frame "Final Draft" in the figma project "Marius Website". Write a multistep plan into the @spec/ folder to build this website. Assets in the figma should be sourced from the @asset_source/ folder. The assets have to be copied into the best location before usage. Use mordern React and use functional components. Use reusable components when sensible.

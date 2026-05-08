@@ -1,46 +1,119 @@
-# Getting Started with Create React App
+# Marius Knipp Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio website for **Marius Knipp** (product and industrial designer), focused on spatial design, trade fair construction, retail design, rendering, and branding.
+
+This project delivers the live portfolio experience and legal pages for mariusknipp.de.
+
+## Overview
+
+- Single-page portfolio experience with section-based navigation
+- Dedicated legal pages: `/impressum` and `/datenschutz`
+- German-first content and messaging
+- Built with React + TypeScript + Tailwind CSS
+
+## Features
+
+- **Hero section** with animated background zoom and decorative star icons
+- **Sticky header** with active-section highlighting on scroll
+- **About, Services, Projects, Contact** sections with fade-in animations
+- **Projects gallery modal**:
+  - click-to-open project details
+  - image carousel with keyboard support (`Esc`, `←`, `→`)
+  - portrait/landscape image handling
+- **Parallax-style arrow animation** in Projects section
+- **Cookie consent banner** (localStorage-based)
+- **Legal pages** with separate legal header and shared footer
+- **Responsive design** from mobile to large desktop
+- **Accessibility basics**: skip link, focus-visible states, semantic structure
+
+## Tech Stack
+
+- **React 19** + **TypeScript**
+- **Create React App** runtime with **CRACO**
+- **Tailwind CSS 3** + PostCSS + Autoprefixer
+- **React Router** for homepage/legal page routing
+
+## Project Status
+
+Completed milestones include:
+- Project setup and design asset integration
+- Full component and section implementation
+- Responsive behavior across breakpoints
+- Final polish (SEO, accessibility, interaction states)
+- Tailwind migration from component CSS files
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (LTS recommended)
+- npm
+
+### Install
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm start
+```
+
+App runs at:
+- `http://localhost:3000`
+
+### Production build
+
+```bash
+npm run build
+```
+
+### Test
+
+```bash
+npm test
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+| Command | Description |
+|---|---|
+| `npm start` | Start dev server via CRACO |
+| `npm run build` | Create production build in `build/` |
+| `npm test` | Run test runner |
+| `npm run eject` | Eject CRA config (irreversible) |
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```text
+src/
+  assets/                 # Fonts, icons, project images
+  components/
+    layout/               # Header, Footer, LegalHeader
+    sections/             # Hero, About, Services, Projects, Contact
+    ui/                   # Reusable UI (Button, cards, modal, cookie banner)
+  data/                   # services.tsx, projects.ts
+  hooks/                  # useFadeIn
+  pages/                  # Impressum, Datenschutz
+  styles/                 # global Tailwind/base styles
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Content Maintenance
 
-### `npm test`
+Update portfolio content here:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `src/data/services.tsx` — service cards and text
+- `src/data/projects.ts` — project cards, metadata, and modal galleries
 
-### `npm run build`
+When adding new project images, place assets in:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `src/assets/images/projects/<project-name>/...`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Then import and register them in `src/data/projects.ts`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Notes
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Main content language is German.
+- Fonts are self-hosted variable fonts in `src/assets/fonts/`.
