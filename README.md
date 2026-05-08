@@ -2,7 +2,9 @@
 
 Portfolio website for **Marius Knipp** (product and industrial designer), focused on spatial design, trade fair construction, retail design, rendering, and branding.
 
-This project delivers the live portfolio experience and legal pages for mariusknipp.de.
+This project delivers the live portfolio experience and legal pages for [mariusknipp.de](https://mariusknipp.de).
+
+![Marius Knipp Website Screenshot](./public/readme-screenshot.png)
 
 ## Overview
 
