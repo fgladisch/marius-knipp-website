@@ -35,15 +35,6 @@ This project delivers the live portfolio experience and legal pages for [mariusk
 - **Tailwind CSS 3** + PostCSS + Autoprefixer
 - **React Router** for homepage/legal page routing
 
-## Project Status
-
-Completed milestones include:
-- Project setup and design asset integration
-- Full component and section implementation
-- Responsive behavior across breakpoints
-- Final polish (SEO, accessibility, interaction states)
-- Tailwind migration from component CSS files
-
 ## Getting Started
 
 ### Prerequisites
